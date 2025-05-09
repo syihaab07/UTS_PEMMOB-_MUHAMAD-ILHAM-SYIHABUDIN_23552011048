@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#003D3B"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Gambar Klinik -->
+            <ImageView
+                android:id="@+id/clinicImage"
+                android:layout_width="500dp"
+                android:layout_height="250dp"
+                android:src="@drawable/img_20250508_wa0000"
+                android:contentDescription="Gambar Klinik Kanaya"
+                android:scaleType="fitCenter"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Deskripsi Klinik -->
+            <TextView
+                android:id="@+id/clinicDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Klinik Kanaya adalah klinik kesehatan terkemuka yang menyediakan berbagai layanan medis dan perawatan berkualitas tinggi. Kami berkomitmen untuk memberikan pelayanan terbaik bagi pasien kami dengan fasilitas yang modern dan tenaga medis yang profesional."
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:lineSpacingExtra="8dp"
+                android:padding="16dp"
+                android:textAlignment="center" />
+
+            <!-- Tombol Login -->
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@color/hijau"
+                android:text="Login"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                tools:ignore="TextContrastCheck" />
+
+            <!-- Tombol Register -->
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/hijau"
+                android:text="Register"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                tools:ignore="TextContrastCheck" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
